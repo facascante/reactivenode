@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+var app = require('../app');
+var debug = require('debug')('current:server');
+var http = require('http');
+
+var config = require('config');
+var port = config.get('port');
+
+app.set('port', port);
+
+var server = http.createServer(app);
+
+server.listen(port);
