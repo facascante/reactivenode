@@ -34,14 +34,14 @@ emitter.invokeHook('db::create',
 
   emitter.registerHook('db::create',function(options,finish){
 		
-		if(db[options.table]){
-			db[options.table].create(options.content,finish);
-		}
-		else{
-			finish("TABLE_NOT_FOUND");
-		}
+    if(db[options.table]){
+	   db[options.table].create(options.content,finish);
+	}
+	else{
+	   finish("TABLE_NOT_FOUND");
+	}
 		
-	});
+   });
   
 ```
 
