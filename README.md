@@ -4,7 +4,7 @@
 
 *  Publish an event that notify all listeners and get each listener's responses.
 
-## Example
+## Usage
 
 * Invoke create user event
 ```js
@@ -45,6 +45,10 @@ emitter.invokeHook('db::create',
   
 ```
 
+## Example / Testing
+
+* Clone this repo and run
+* navigate to your browser with this endpoint http://localhost:3000/api/users/create?UserName=chito&Password=chito
 
 
 
